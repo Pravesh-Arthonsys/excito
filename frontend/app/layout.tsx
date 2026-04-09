@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Pacifico } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from '@/context/CartContext';
+import ThemeInitializer from '@/components/ThemeInitializer';
 
 const pacifico = Pacifico({
   weight: '400',
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}
       >
+        <ThemeInitializer />
         <CartProvider>
           {children}
         </CartProvider>

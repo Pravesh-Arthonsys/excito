@@ -1,0 +1,27 @@
+# Next.js
+**/.next/
+**/node_modules/
+**/.nextdev*.log
+
+# Environment files
+.env
+.env.*
+!**/.env.example
+
+# Python virtual environments
+.venv/
+venv/
+backend/venv/
+
+# Python caches
+**/__pycache__/
+**/*.py[cod]
+
+# Django dev DB + uploads
+backend/db.sqlite3
+backend/media/
+
+# OS / editor
+**/.DS_Store
+Thumbs.db
+.vscode/
